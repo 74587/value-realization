@@ -7,8 +7,8 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 # Value Realization Philosophy
 
 **Status**: Production Ready ✅
-**Version**: 1.2.0
-**Last Updated**: 2026-04-27
+**Version**: 1.2.1
+**Last Updated**: 2026-05-05
 **Type**: Analytical Framework
 
 ## Overview
@@ -95,10 +95,11 @@ This skill operates through conversational analysis. When the user presents a pr
   - When evaluating a product idea, fully analyze all four dimensions
   - When writing copy, usage scenarios, or use cases, first judge whether value is clear, when value occurs, whether the outcome is perceivable, and whether end users need to discover value through use
   - When diagnosing existing copy or a value proposition, use the four dimensions to assess effectiveness
+- Before outputting status indicators in the four-dimension analysis, read `references/scoring-rubric.md`
 - Analysis process for each dimension:
-  1. Provide status assessment using status indicators (🔴🟡🟢) with specific description of current state (not vague generalizations). Reference criteria for status indicators: `references/scoring-rubric.md`
-  2. Explain the analytical reasoning for this dimension (why this dimension matters for this product)
-  3. Systematically apply the dimension's analytical methods to the current product idea, feature, copy, usage scenario, or use case, stating the preconditions and applicability boundaries the judgment depends on (cannot skip the analysis and jump directly to questions)
+  1. Explain the analytical reasoning for this dimension (why this dimension matters for this product)
+  2. Systematically apply the dimension's analytical methods to the current product idea, feature, copy, usage scenario, or use case, stating the preconditions and applicability boundaries the judgment depends on (cannot skip the analysis and jump directly to questions)
+  3. After completing the dimension analysis, provide status assessment using status indicators (🔴🟡🟢) with specific description of current state (not vague generalizations). Check the status against `references/scoring-rubric.md`
   4. When citing product cases, base on verifiable information and explain relevance to current product (case applicability assessment in "Research Methodology" section)
   5. Pose sharp questions that directly challenge product necessity or require comparison with existing solutions
 - After completing all four dimensions, provide summary
