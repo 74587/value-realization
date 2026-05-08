@@ -7,7 +7,7 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 # Value Realization Philosophy
 
 **Status**: Production Ready ✅
-**Version**: 1.2.2
+**Version**: 1.2.3
 **Last Updated**: 2026-05-05
 **Type**: Analytical Framework
 
@@ -307,6 +307,12 @@ For complete case studies with metrics and data sources, see `references/real-ca
 **The reality**: If the scenario where value occurs is not specified, end users will have difficulty judging whether the value applies to them
 **The approach**: Map abstract value to a concrete scenario: who completes what task under what conditions, and what result they get through the product
 
+### Pitfall 8: Treating Contextual Certainty as Universal Certainty
+
+**The trap**: "This judgment holds in another context, so it can be applied directly in the current context"
+**The reality**: Judgments often depend on specific conditions. When the current context does not satisfy those conditions, whether the original judgment holds remains a hypothesis requiring verification
+**The approach**: Restore the key conditions the original judgment depends on and check whether the current context satisfies them; if key conditions do not hold or have changed, downgrade the original judgment to a hypothesis requiring verification and identify what evidence is needed
+
 ## Research Methodology
 
 ### Verify Information Accuracy
@@ -358,6 +364,23 @@ Before citing any theory, pattern, or case conclusion:
 **Common misuses**:
 - **Cross-context misuse**: Taking a conclusion that holds under one set of preconditions and transferring it directly into a situation with different preconditions
 - **Cross-level misuse**: Treating a local judgment, tactical judgment, or short-term judgment as if it were a whole-product judgment, strategic judgment, or long-term judgment
+
+### Condition-Certainty Mismatch
+
+**Definition**:
+Condition-certainty mismatch describes a reasoning bias: when forming a current conclusion, a prior judgment that holds only under specific conditions is treated as if it also holds in the current context, turning a hypothesis that still requires verification into a premise for judgment. Here, certainty does not mean an unconditionally valid proposition; it means a judgment's status as a usable premise under specific conditions.
+
+**How to apply**:
+When a prior judgment needs to be used in the current context:
+1. Restore the key conditions the judgment depends on
+2. Check whether those conditions hold or have changed in the current context
+3. Determine whether condition differences affect the judgment's applicability in the current context
+4. Downgrade any part not supported by current conditions to a hypothesis requiring verification
+
+**Key considerations**:
+- When key conditions do not hold, have changed, or lack sufficient evidence, the prior judgment should not be used directly as a premise for the current conclusion
+- Condition differences do not mean the prior judgment is invalid; explain how the differences affect the current judgment
+- The result alone cannot establish the cause; attribution should state the reasoning basis and identify what additional evidence is needed
 
 ### Evaluating Case Study Applicability
 
