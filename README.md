@@ -1,8 +1,8 @@
 # Value Realization
 
-Evaluate product ideas by analyzing whether end users will "know" what value they can achieve.
+Evaluate product ideas by analyzing whether end users can understand what outcomes they may achieve through a product in a concrete scenario.
 
-Guides analysis of value clarity, timeline, perception, and discovery patterns.
+Guides analysis of value clarity, timeline, perception, discovery patterns, value scenarios, and condition-dependent judgments.
 
 ---
 
@@ -12,9 +12,9 @@ Guides analysis of value clarity, timeline, perception, and discovery patterns.
 npx skills add https://github.com/Done-0/value-realization
 ```
 
-Works with Claude Code, Cursor, Cline, and other AI coding assistants.
+Designed for AI coding assistants that support local skill directories.
 
-### Alternative: Manual Installation
+### Manual Installation
 
 If you don't have Node.js installed:
 
@@ -31,46 +31,61 @@ Analyzes product ideas through four dimensions with status indicators (🔴🟡�
 
 | Dimension | Question |
 |-----------|----------|
-| **Value Clarity** | Can end users articulate what they'll achieve? |
-| **Value Timeline** | When do end users see results? |
-| **Value Perception** | Can end users see/feel their progress? |
+| **Value Clarity** | Can end users articulate what they will achieve? |
+| **Value Timeline** | When does the value occur or become perceivable? |
+| **Value Perception** | Can end users see, feel, verify, or communicate the result? |
 | **Value Discovery** | How do end users come to understand the value? |
 
-Each dimension receives a status assessment with analytical reasoning and sharp questions that challenge product necessity.
+Status indicators are reference signals; they do not replace the reasoning chain.
+
+The skill also checks:
+
+- Whether features are connected to end-user outcomes
+- Whether value is placed in a concrete value scenario
+- Whether case conclusions or prior judgments depend on conditions that may not hold in the current context
 
 ---
 
 ## When to Use
 
-Triggers when you:
+Use this skill when you:
 
 - Discuss product ideas with uncertainty
 - Evaluate features or plan marketing strategies
 - Analyze user adoption or retention problems
-- Ask "is this idea good?", "will users want this?", "why aren't users staying?"
+- Write or review product copy, usage scenarios, or use cases
+- Borrow from a case, pattern, strategy, or prior judgment and need to check whether its conditions still apply
 
 ---
 
 ## Real Case Studies
 
-Includes quantitative analysis of real products:
+Includes product case studies with data sources, evidence status, analysis boundaries, and value mechanisms:
 
-**✅ Success**
+**Success**
 - **Dropbox**: Clear value proposition — file access from any device
 - **Instagram**: Identity transformation from photo sharing to photographer status
-- **Duolingo**: 500M+ users — long-term value with optional short-term touchpoints
-- **WeChat**: 1.3B users — "use and go" philosophy building trust
-- **GitHub**: 100M+ developers — code backup and collaboration
-- **Notion**: 30M+ users — flexible knowledge management
-- **Netflix**: 230M+ subscribers — entertainment with personalized recommendations
-- **Slack**: 18M+ daily active users — team communication and searchable history
-- **MyFitnessPal**: 200M+ users — calorie tracking for weight loss
+- **Duolingo**: Long-term value with optional short-term touchpoints
+- **WeChat**: Daily task entry point and trust-building usage pattern
+- **GitHub**: Code backup, collaboration, and accumulated developer reputation
+- **Notion**: Flexible knowledge management and organization discovery
+- **Netflix**: Entertainment access with personalized content discovery
+- **Slack**: Team communication and searchable history
+- **MyFitnessPal**: Calorie tracking for weight and health goals
 
-**❌ Failure**
-- **Google Wave**: Shut down 14 months after launch — abstract value proposition
-- **Quibi**: $1.75B funding, shut down in 6 months — unclear differentiation
+**Failure**
+- **Google Wave**: Technical concept with unclear end-user outcome
+- **Quibi**: Scenario-dependent positioning with insufficient differentiation
 
-All cases include data sources and quantitative metrics.
+---
+
+## Key Concepts
+
+**Value**: A beneficial relational property between subject and object. In product analysis, it is expressed as the outcomes end users achieve through a product in a concrete scenario.
+
+**Value scenario**: A concrete context in which end users use a product with a task or goal and obtain an outcome that can be understood, verified, and perceived.
+
+**Condition-certainty mismatch**: A reasoning bias where a judgment that holds only under specific conditions is treated as if it also holds in the current context.
 
 ---
 
@@ -79,37 +94,22 @@ All cases include data sources and quantitative metrics.
 - English: `SKILL.md`
 - 中文: `SKILL-zh.md`
 
-Both versions include complete documentation and case studies.
+Reference files include case studies, scoring criteria, and methodology notes in both languages.
 
 ---
 
-## Philosophy
+## Contact
 
-End users adopt products when they can articulate what value they'll achieve.
-
-**Key distinction:**
-- **User**: The person using this skill (product creator, PM, designer, entrepreneur)
-- **End user**: The person who will use the product being discussed
-
-**Observed patterns:**
-- When end users can articulate clear value → higher adoption rates
-- When end users cannot articulate value → adoption challenges
-- Some end users adopt without full clarity, then discover value through use
-
-**Value types:** Identity and belonging, financial gain, short/long-term benefits, status and recognition, capability enhancement, time savings, problem resolution.
+For questions or feedback: fenderisfine@gmail.com
 
 ---
 
 ## Contributing
 
-Issues and pull requests welcome. For major changes, open an issue first.
+Issues and pull requests are welcome. For major changes, open an issue first.
 
 ---
 
 ## License
 
 MIT — see [LICENSE](LICENSE)
-
----
-
-Built by [Done-0](https://github.com/Done-0)
