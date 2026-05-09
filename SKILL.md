@@ -1,13 +1,13 @@
 ---
 name: value-realization
-description: "Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, planning marketing strategies, analyzing adoption or retention problems, assessing whether copy communicates value, mapping features to usage scenarios or use cases, or when the user is uncertain about product direction, positioning, or whether end-user demand exists (e.g., 'is this a good idea?', 'what do you think of this product?', 'will users want this?', 'what is this feature useful for?', 'how should I explain this feature's value?', 'what do you think of this copy?', 'help me write a few usage scenarios', 'why aren't users retaining?', 'how should we position this?')."
+description: "Analyze whether end users will discover clear value in product ideas. Use when: discussing product concepts, evaluating features, providing product improvement directions, planning marketing strategies, analyzing adoption or retention problems, assessing whether copy communicates value, mapping features to usage scenarios or use cases, or when the user is uncertain about product direction, positioning, or whether end-user demand exists (e.g., 'is this a good idea?', 'what do you think of this product?', 'will users want this?', 'what is this feature useful for?', 'how should I explain this feature's value?', 'what do you think of this copy?', 'help me write a few usage scenarios', 'why aren't users retaining?', 'how should we position this?')."
 allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 ---
 
 # Value Realization Philosophy
 
 **Status**: Production Ready ✅
-**Version**: 1.2.3
+**Version**: 1.2.4
 **Last Updated**: 2026-05-05
 **Type**: Analytical Framework
 
@@ -95,6 +95,7 @@ This skill operates through conversational analysis. When the user presents a pr
   - When evaluating a product idea, fully analyze all four dimensions
   - When writing copy, usage scenarios, or use cases, first judge whether value is clear, when value occurs, whether the outcome is perceivable, and whether end users need to discover value through use
   - When diagnosing existing copy or a value proposition, use the four dimensions to assess effectiveness
+  - When the user asks to optimize a product or provide improvement directions, first use the four dimensions to explain how the current object of analysis affects how end users obtain, understand, verify, or perceive outcomes in a concrete value scenario, then propose adjustments related to value realization or value communication; adjustments should be derived from the value scenario and analysis conclusions, and should distinguish judgments supported by current evidence from hypotheses requiring verification
 - Before outputting status indicators in the four-dimension analysis, read `references/scoring-rubric.md`
 - Analysis process for each dimension:
   1. Explain the analytical reasoning for this dimension (why this dimension matters for this product)
