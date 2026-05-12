@@ -7,8 +7,8 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 # Value Realization Philosophy
 
 **Status**: Production Ready ✅
-**Version**: 1.2.4
-**Last Updated**: 2026-05-05
+**Version**: 1.2.5
+**Last Updated**: 2026-05-12
 **Type**: Analytical Framework
 
 ## Overview
@@ -26,9 +26,10 @@ This skill provides a philosophical framework and analytical methods for evaluat
 **Key terminology**:
 - **User**: The person using this skill (product creator, PM, designer, entrepreneur, etc.)
 - **End user**: The person who will use the product being discussed
-- **Value**: A beneficial relational property between subject and object, expressed as the outcomes end users achieve through the product (such as identity, financial gain, capability enhancement, time savings, etc.)
+- **Value**: A beneficial relational property between subject and object. In product analysis, judgments about whether value holds must be specified in terms of outcomes that end users can understand, verify, and perceive in a concrete value scenario (such as identity, financial gain, capability enhancement, time savings, etc.)
+- **Value Relation Position**: An analytical element within a value scenario that indicates where value confirmation or outcome realization occurs in the value relation. Analysis must distinguish between: end users confirming that an external object, content, feature, or product is valuable to them; end users achieving their own outcome through the product; and end users themselves, their actions, or their outputs being confirmed as valuable through feedback from other people, groups, organizations, or systems. The three can coexist, but they cannot substitute for one another
 - **Features**: The product's technical capabilities
-- **Value Scenario**: A concrete context in which end users use the product with a specific task or goal and obtain an outcome that can be understood, verified, and perceived
+- **Value Scenario**: A concrete context in which end users use the product with a specific task or goal and obtain an outcome that can be understood, verified, and perceived. A value scenario should specify the end-user task, product role, value relation position, and outcome end users achieve
 - **Usage Scenario**: A concrete context in which the product may be used
 - **Use Case**: A specific task or workflow end users complete with the product in a given context
 
@@ -37,6 +38,7 @@ This skill provides a philosophical framework and analytical methods for evaluat
 - Features are what the product can do, value is the outcomes end users gain
 - Analysis must translate features into specific end user outcomes
 - Value analysis should place value in a concrete scenario
+- Value scenario analysis should specify the value relation position to avoid conflating external objects being considered valuable, end users achieving their own outcomes, and end users themselves, their actions, or their outputs being confirmed as valuable
 - Usage scenarios explain where the product may be used, use cases explain how end users use it to complete tasks, and value scenarios explain what outcome end users get in that context
 
 ## Core Insight
@@ -71,6 +73,8 @@ Product attributes themselves are not end-user value. Analysis should use scenar
 
 Attributes still matter. Attributes provide evidence; scenarios help establish the relationship between attributes and end-user outcomes.
 
+Value scenarios should also specify the value relation position: what external object end users confirm as valuable to them, what outcome they achieve for themselves through the product, and whether they themselves, their actions, or their outputs are confirmed as valuable through feedback.
+
 ## The Challenge
 
 Most product creators face a hidden problem: **end users often don't know what they actually want, and how they articulate it may be wrong**.
@@ -82,7 +86,7 @@ The job isn't just to build what end users ask for - it's to help end users disc
 This skill operates through conversational analysis. When the user presents a product idea, feature, copy, usage scenario, or use case:
 
 1. **Identify the end users** - Determine who will use the product
-2. **Identify the value scenario** - Determine the concrete context where value occurs
+2. **Identify the value scenario** - Determine the concrete context where value occurs and specify the value relation position
 3. **Evaluate through four dimensions** - Value clarity, timeline, perception, discovery
 4. **Adjust output to the request** - Full analysis, copy, usage scenarios, use cases, or diagnostic assessment
 5. **Consider context** - Each product, market, and end user group differs
@@ -95,7 +99,7 @@ This skill operates through conversational analysis. When the user presents a pr
   - When evaluating a product idea, fully analyze all four dimensions
   - When writing copy, usage scenarios, or use cases, first judge whether value is clear, when value occurs, whether the outcome is perceivable, and whether end users need to discover value through use
   - When diagnosing existing copy or a value proposition, use the four dimensions to assess effectiveness
-  - When the user asks to optimize a product or provide improvement directions, first use the four dimensions to explain how the current object of analysis affects how end users obtain, understand, verify, or perceive outcomes in a concrete value scenario, then propose adjustments related to value realization or value communication; adjustments should be derived from the value scenario and analysis conclusions, and should distinguish judgments supported by current evidence from hypotheses requiring verification
+  - When the user asks to optimize a product or provide improvement directions, first use the value scenario and four dimensions to explain how the current object of analysis affects how end users obtain, understand, verify, or perceive outcomes in a concrete value scenario, then propose adjustments related to value realization or value communication; adjustments should be derived from the value scenario and analysis conclusions, and should distinguish judgments supported by current evidence from hypotheses requiring verification
 - Before outputting status indicators in the four-dimension analysis, read `references/scoring-rubric.md`
 - Analysis process for each dimension:
   1. Explain the analytical reasoning for this dimension (why this dimension matters for this product)
@@ -308,7 +312,13 @@ For complete case studies with metrics and data sources, see `references/real-ca
 **The reality**: If the scenario where value occurs is not specified, end users will have difficulty judging whether the value applies to them
 **The approach**: Map abstract value to a concrete scenario: who completes what task under what conditions, and what result they get through the product
 
-### Pitfall 8: Treating Contextual Certainty as Universal Certainty
+### Pitfall 8: Confusing Different Value Relation Positions
+
+**The trap**: Because end users find content interesting, information useful, the product easy to use, or experience short-term enjoyment, the product is judged to already support the claimed end-user outcome
+**The reality**: These phenomena may correspond to external-object value confirmation or a short-term end-user outcome, but they do not mean that other outcomes such as capability, identity, relationships, contribution, task completion, or being needed have occurred
+**The approach**: Specify the value relation position and judge whether the position that has occurred is sufficient to support the product claim; do not extrapolate evidence from one position into a result in another position
+
+### Pitfall 9: Treating Contextual Certainty as Universal Certainty
 
 **The trap**: "This judgment holds in another context, so it can be applied directly in the current context"
 **The reality**: Judgments often depend on specific conditions. When the current context does not satisfy those conditions, whether the original judgment holds remains a hypothesis requiring verification
@@ -329,10 +339,10 @@ When citing real product cases, base on verifiable information and explain relev
 Value scenarios can be proposed as analytical hypotheses, but they cannot be treated directly as facts.
 
 **Distinguish between**:
-- **Hypothetical value scenarios**: Possible use contexts inferred from the product, end users, and features
-- **Validated value scenarios**: Contexts supported by user interviews, behavior data, real cases, market materials, or product usage evidence
+- **Hypothetical value scenarios**: Possible use contexts, value relation positions, and outcomes inferred from the product, end users, and features
+- **Validated value scenarios**: Use contexts, value relation positions, and outcomes supported by user interviews, behavior data, real cases, market materials, or product usage evidence
 
-When a value scenario is unvalidated, state clearly that it is an analytical hypothesis and identify what evidence would be needed to verify it.
+When a value scenario is unvalidated, state clearly that it is an analytical hypothesis and identify what evidence would be needed to verify its context, value relation position, and outcome.
 
 ### Condition Archaeology
 
@@ -454,7 +464,7 @@ If you still need to borrow a cross-domain example, first restore the preconditi
 
 **Features vs Value**:
 - Features: What the product does (technical capabilities)
-- Value: What end users achieve through the product in a concrete context (outcomes, benefits)
+- Value: What result end users obtain or achieve through the product in a concrete value scenario
 - End users adopt products based on value, not features
 
 **Value perception timing**:
@@ -483,7 +493,7 @@ If you still need to borrow a cross-domain example, first restore the preconditi
 
 This skill works best in conversation. When the user discusses a product idea, feature, copy, usage scenario, or use case:
 
-1. **Identify the value scenario**: In what context do end users use the product, and what result do they get?
+1. **Identify the value scenario**: In what context do end users use the product, what is the value relation position, and what result do they get?
 2. **Explore value clarity**: Can end users articulate what they'll achieve?
 3. **Examine the timeline**: Is value immediate or delayed for end users? What's appropriate for this product?
 4. **Assess perception**: Can end users see/feel their progress?
@@ -500,7 +510,7 @@ This skill works best in conversation. When the user discusses a product idea, f
 3. **End users often don't know what they want** - help them discover it
 4. **Perception matters to end users** - invisible value feels like no value
 5. **Context is everything** - patterns from one product may not apply to others
-6. **Test with real end users, don't assume** - validate in specific scenarios
+6. **Test with real end users, don't assume** - validate the context, value relation position, and outcome in a concrete value scenario
 7. **Both short-term and long-term are valid** - neither is superior, choose based on product nature
 
 ## Additional Resources
